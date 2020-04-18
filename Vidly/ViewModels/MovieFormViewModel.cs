@@ -42,9 +42,6 @@ namespace Vidly.ViewModels
         [Required]
         public byte? NumberInStock { get; set; }
 
-        public string Title
-        {
-            get { return Id != 0 ? "Edit Movie" : "New Movie"; }
-        }
+        public string Title => Id != 0 ? "Edit Movie" : "New Movie";
     }
 }
